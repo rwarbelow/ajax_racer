@@ -1,0 +1,18 @@
+<h1><%= @player.name %>'s Past Matches</h1>
+
+<table>
+  <% @counter = 1 %>
+  <% @games.each do |game| %>
+  <tr>Game #: <%=@counter %></tr><br>
+  <tr>Played at: <%= game.created_at%></tr><br>
+  <tr>Player on track 1: <%= game.players[0].name%></tr><br>
+  <tr>Player on track 2: <%= game.players[1].name%></tr><br>
+  <% if game.winner %>
+  <tr>Winner: <%= game.winner.name %></tr><br>
+  <tr>Winning time: <%= game.time %></tr><br><br>
+  <% else %>
+  <tr>No winner.</tr><br><br>
+  <%end %>
+  <% @counter +=1 %>
+  <% end %>
+</table>
