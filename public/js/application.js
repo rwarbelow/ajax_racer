@@ -27,7 +27,56 @@ function play(){
 };
 
 
+// // Players
+// function Player(name){
+//   this.name = name;
+// };
+// // Game
+// function Game(player1, player2){
+//   this.players = [player1, player2];
+// };
+
+// game.prototype = {
+//   start: function(){},
+//   addPlayers: function(player){
+//     this.players.push(player);
+//   },
+
+//   render: function(){
+//     this.players.forEach(function(player){
+//       new PlayerRowView(){
+
+
+//       }.render()
+//     });
+//   }
+
+// }
+
+function PlayerRowView(player) {
+  render: return "<tr><td></td></tr>"
+}
+
+class Person
+  def initialize(args)
+    ....code....
+  end
+
+  def other_method
+  end
+end
+
+function Person() {
+  //def initialize
+}
+
+Person.prototype.otherMethod = function(){...};
+
+
+
 $(document).ready(function() {
+
+  // driver code
   $('#player-setup').on('submit', 'form', function(event){
     event.preventDefault();
     var url = $(this).attr('action');
